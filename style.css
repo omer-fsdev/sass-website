@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #77bbec;
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  width: 80px;
+  border: 2px solid gray;
+  border-radius: 20%;
+  margin: 10px;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+}
+header ul li {
+  padding: 10px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+header ul li:hover {
+  background-color: #c69;
+  border-radius: 10px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: #c69;
+}
+.banner .left {
+  align-items: center;
+  padding: 10px;
+  margin-left: 10px;
+}
+.banner button {
+  border: 3px solid #77bbec;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
+}
+.banner img {
+  width: 30%;
+}
+
+.cards {
+  display: flex;
+}
+.cards .card1 {
+  width: 25%;
+  background-color: rgb(186, 54, 54);
+  height: 200px;
+  border: 2px solid gray;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+.cards .card2 {
+  width: 25%;
+  background-color: cadetblue;
+  height: 200px;
+  border: 2px solid gray;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+.cards .card3 {
+  width: 25%;
+  background-color: green;
+  height: 200px;
+  border: 2px solid gray;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+.cards .card4 {
+  width: 25%;
+  background-color: crimson;
+  height: 200px;
+  border: 2px solid gray;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+}
+
+.container.pink {
+  background-color: rgb(210, 122, 137);
+}
+
+.container.green {
+  background-color: rgb(75, 135, 75);
+}
+
+.container.blue {
+  background-color: rgba(37, 81, 109, 0.891);
+}
+
+.articles {
+  display: flex;
+}
+.articles .article1, .articles .article2 {
+  width: 50%;
+  padding: 10px;
+  height: 200px;
+  background-color: cyan;
+  border: 2px solid gray;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+.articles .article2 {
+  background-color: coral;
+  color: #fff;
+}
+
+footer p {
+  background-color: pink;
+}
+
+.social-boxes .social1 {
+  background-color: #990000;
+}
+.social-boxes .social2 {
+  background-color: #55004e;
+}
+.social-boxes .social3 {
+  background-color: #0fa8a1;
+}
+.social-boxes .social4 {
+  background-color: #121456;
+}
+
+/*# sourceMappingURL=style.css.map */

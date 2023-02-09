@@ -1,0 +1,42 @@
+@import "./sass/abstract/variable", "./sass/base/reset";
+@import "./sass/components/header", "./sass/components/banner";
+@import "./sass/abstract/mixin", "./sass/abstract/inherit";
+
+$mode: 2;
+footer {
+  p {
+    @if $mode==1 {
+      background-color: crimson;
+    } @else if $mode==2 {
+      background-color: pink;
+    } @else {
+      background-color: goldenrod;
+    }
+  }
+}
+
+// ---FOR LOOPS---
+
+//.social-boxes{
+// @for $i from 1 through 5 {
+//    .social#{$i}{
+//      width: 20%;
+//      $my-paint:($i*5);
+//      background-color: lighten(rgb(141, 24, 43), $i*10);
+//      border-bottom: 2px solid red;
+//      font-size: $i*1rem;
+//    }
+//  }
+//}
+
+// ---ARRAYS---
+
+$colors: #990000, #55004e, #0fa8a1, #121456, #64c217;
+
+.social-boxes {
+  @for $i from 1 to length($colors) {
+    .social#{$i} {
+      background-color: nth($colors, $i);
+    }
+  }
+}

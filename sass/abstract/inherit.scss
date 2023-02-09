@@ -1,0 +1,18 @@
+.articles {
+  display: flex;
+  .article1 {
+    width: 50%;
+    padding: $padding-size;
+    height: 200px;
+    background-color: cyan;
+    border: $border;
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+
+  .article2 {
+    @extend .article1;
+    background-color: coral;
+    color: #fff;
+  }
+}

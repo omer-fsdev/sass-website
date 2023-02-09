@@ -1,0 +1,42 @@
+@mixin myBox($back-color, $font-color, $size) {
+  width: 25%;
+  background-color: $back-color;
+  height: 200px;
+  border: $border;
+  margin: 5px;
+  padding: $padding-size;
+  border-radius: 10px;
+  font-size: $size;
+}
+
+.cards {
+  display: flex;
+  .card1 {
+    @include myBox(rgb(186, 54, 54), white, 1.2rem);
+  }
+
+  .card2 {
+    @include myBox(cadetblue, brown, 2rem);
+  }
+  .card3 {
+    @include myBox(green, white, 1.5rem);
+  }
+
+  .card4 {
+    @include myBox(crimson, blue, 1.6rem);
+  }
+}
+
+$the-colors: (
+  "pink": rgb(210, 122, 137),
+  "green": rgb(75, 135, 75),
+  "blue": rgba(37, 81, 109, 0.891),
+);
+
+@each $i, $color in $the-colors {
+  .container {
+    &.#{$i} {
+      background-color: $color;
+    }
+  }
+}
